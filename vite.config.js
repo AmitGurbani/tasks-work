@@ -1,17 +1,20 @@
+import path from "path";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
 
-import path from 'path';
-import { svelte } from '@sveltejs/vite-plugin-svelte';
+import { createHtmlPlugin } from "vite-plugin-html";
 
-import { createHtmlPlugin } from 'vite-plugin-html';
-
-process.env.TARGET = process.env.TARGET || 'web';
-const isCordova = process.env.TARGET === 'cordova';
+process.env.TARGET = process.env.TARGET || "web";
+const isCordova = process.env.TARGET === "cordova";
 const isElectronWatch = process.env.ELECTRON_WATCH || false;
-const SRC_DIR = path.resolve(__dirname, './src');
-const PUBLIC_DIR = path.resolve(__dirname, './public');
+const SRC_DIR = path.resolve(__dirname, "./src");
+const PUBLIC_DIR = path.resolve(__dirname, "./public");
 const BUILD_DIR = path.resolve(
   __dirname,
-  isCordova ? (isElectronWatch ? 'cordova/platforms/electron/www' : 'cordova/www') : './www',
+  isCordova
+    ? isElectronWatch
+      ? "cordova/platforms/electron/www"
+      : "cordova/www"
+    : "./www"
 );
 
 export default {
@@ -27,7 +30,7 @@ export default {
     }),
   ],
   root: SRC_DIR,
-  base: '',
+  base: "",
   publicDir: PUBLIC_DIR,
   build: {
     outDir: BUILD_DIR,
@@ -39,11 +42,10 @@ export default {
   },
   resolve: {
     alias: {
-      '@': SRC_DIR,
+      "@": SRC_DIR,
     },
   },
   server: {
     host: true,
   },
-
 };
