@@ -34,7 +34,7 @@
     "material-icons": "^1.13.2",
     "skeleton-elements": "^4.0.1",
     "svelte": "^3.57.0",
-    "swiper": "^8.4.7"
+    "swiper": "^9.1.1"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.4.0",
