@@ -1,3 +1,5 @@
+# Tasks Work
+
 ![GitHub language count](https://img.shields.io/github/languages/count/AmitGurbani/tasks-work)
 ![GitHub top language](https://img.shields.io/github/languages/top/AmitGurbani/tasks-work)
 ![GitHub](https://img.shields.io/github/license/AmitGurbani/tasks-work)
@@ -5,8 +7,8 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/AmitGurbani/tasks-work)
 ![GitHub last commit](https://img.shields.io/github/last-commit/AmitGurbani/tasks-work)
 ![GitHub Discussions](https://img.shields.io/github/discussions/AmitGurbani/tasks-work)
-
-# Tasks Work
+[![CodeFactor](https://www.codefactor.io/repository/github/amitgurbani/tasks-work/badge)](https://www.codefactor.io/repository/github/amitgurbani/tasks-work)
+[![DeepSource](https://deepsource.io/gh/AmitGurbani/tasks-work.svg/?label=active+issues&token=BTm-qOAqGxCUUym3XhuZR_3d)](https://deepsource.io/gh/AmitGurbani/tasks-work/?ref=repository-badge)
 
 ## Privacy Focused Productivity Enhancement App
 
