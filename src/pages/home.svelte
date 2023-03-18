@@ -1,12 +1,42 @@
+<script>
+  import {
+    Page,
+    Navbar,
+    NavLeft,
+    NavTitle,
+    NavTitleLarge,
+    NavRight,
+    Link,
+    Toolbar,
+    Block,
+    BlockTitle,
+    List,
+    ListItem,
+    Row,
+    Col,
+    Button,
+  } from "framework7-svelte";
+</script>
+
 <Page name="home">
   <!-- Top Navbar -->
   <Navbar large sliding={false}>
     <NavLeft>
-      <Link iconIos="f7:menu" iconAurora="f7:menu" iconMd="material:menu" panelOpen="left" />
+      <Link
+        iconIos="f7:menu"
+        iconAurora="f7:menu"
+        iconMd="material:menu"
+        panelOpen="left"
+      />
     </NavLeft>
     <NavTitle sliding>Tasks Work</NavTitle>
     <NavRight>
-      <Link iconIos="f7:menu" iconAurora="f7:menu" iconMd="material:menu" panelOpen="right" />
+      <Link
+        iconIos="f7:menu"
+        iconAurora="f7:menu"
+        iconMd="material:menu"
+        panelOpen="right"
+      />
     </NavRight>
     <NavTitleLarge>Tasks Work</NavTitleLarge>
   </Navbar>
@@ -22,8 +52,8 @@
 
   <BlockTitle>Navigation</BlockTitle>
   <List>
-    <ListItem link="/about/" title="About"/>
-    <ListItem link="/form/" title="Form"/>
+    <ListItem link="/about/" title="About" />
+    <ListItem link="/form/" title="Form" />
   </List>
 
   <BlockTitle>Modals</BlockTitle>
@@ -33,7 +63,9 @@
         <Button fill raised popupOpen="#my-popup">Popup</Button>
       </Col>
       <Col width="50">
-        <Button fill raised loginScreenOpen="#my-login-screen">Login Screen</Button>
+        <Button fill raised loginScreenOpen="#my-login-screen"
+          >Login Screen</Button
+        >
       </Col>
     </Row>
   </Block>
@@ -65,22 +97,3 @@
     />
   </List>
 </Page>
-<script>
-  import {
-    Page,
-    Navbar,
-    NavLeft,
-    NavTitle,
-    NavTitleLarge,
-    NavRight,
-    Link,
-    Toolbar,
-    Block,
-    BlockTitle,
-    List,
-    ListItem,
-    Row,
-    Col,
-    Button
-  } from 'framework7-svelte';
-</script>
