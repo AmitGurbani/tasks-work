@@ -9,6 +9,9 @@
 ![GitHub Discussions](https://img.shields.io/github/discussions/AmitGurbani/tasks-work)
 [![CodeFactor](https://www.codefactor.io/repository/github/amitgurbani/tasks-work/badge)](https://www.codefactor.io/repository/github/amitgurbani/tasks-work)
 [![DeepSource](https://deepsource.io/gh/AmitGurbani/tasks-work.svg/?label=active+issues&token=BTm-qOAqGxCUUym3XhuZR_3d)](https://deepsource.io/gh/AmitGurbani/tasks-work/?ref=repository-badge)
+[![Depfu](https://badges.depfu.com/badges/58050740be9d0ccb6a4714493c446dfc/status.svg)](https://depfu.com)
+[![Depfu](https://badges.depfu.com/badges/58050740be9d0ccb6a4714493c446dfc/overview.svg)](https://depfu.com/github/AmitGurbani/tasks-work?project_id=38175)
+[![Depfu](https://badges.depfu.com/badges/58050740be9d0ccb6a4714493c446dfc/count.svg)](https://depfu.com/github/AmitGurbani/tasks-work?project_id=38175)
 
 ## Privacy Focused Productivity Enhancement App
 
