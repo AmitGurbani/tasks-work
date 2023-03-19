@@ -7,7 +7,7 @@ import DynamicRoutePage from "../pages/dynamic-route.svelte";
 import RequestAndLoad from "../pages/request-and-load.svelte";
 import NotFoundPage from "../pages/404.svelte";
 
-var routes = [
+const routes = [
   {
     path: "/",
     component: HomePage,
