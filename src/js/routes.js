@@ -1,4 +1,5 @@
 import HomePage from "../pages/home.svelte";
+import KonstaPage from "../pages/konsta.svelte";
 import AboutPage from "../pages/about.svelte";
 import FormPage from "../pages/form.svelte";
 
@@ -10,6 +11,10 @@ var routes = [
   {
     path: "/",
     component: HomePage,
+  },
+  {
+    path: "/konsta",
+    component: KonstaPage,
   },
   {
     path: "/about/",
