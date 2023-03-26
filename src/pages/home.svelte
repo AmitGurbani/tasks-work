@@ -52,6 +52,7 @@
 
   <BlockTitle>Navigation</BlockTitle>
   <List>
+    <ListItem link="/konsta/" title="Konsta" />
     <ListItem link="/about/" title="About" />
     <ListItem link="/form/" title="Form" />
   </List>

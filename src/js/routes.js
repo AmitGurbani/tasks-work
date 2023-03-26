@@ -1,4 +1,5 @@
 import HomePage from "../pages/home.svelte";
+import KonstaPage from "../pages/konsta.svelte";
 import AboutPage from "../pages/about.svelte";
 import FormPage from "../pages/form.svelte";
 
@@ -6,10 +7,14 @@ import DynamicRoutePage from "../pages/dynamic-route.svelte";
 import RequestAndLoad from "../pages/request-and-load.svelte";
 import NotFoundPage from "../pages/404.svelte";
 
-var routes = [
+const routes = [
   {
     path: "/",
     component: HomePage,
+  },
+  {
+    path: "/konsta",
+    component: KonstaPage,
   },
   {
     path: "/about/",
