@@ -31,7 +31,7 @@ const routes = [
   },
   {
     path: "/request-and-load/user/:userId/",
-    async: function ({ router, to, resolve }) {
+    async: ({ router, _to, resolve }) => {
       // App instance
       const app = router.app;
 
@@ -39,7 +39,7 @@ const routes = [
       app.preloader.show();
 
       // Simulate Ajax Request
-      setTimeout(function () {
+      setTimeout(() => {
         // We got user data from request
         const user = {
           firstName: "Vladimir",
