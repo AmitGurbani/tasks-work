@@ -18,6 +18,6 @@ import App from "../components/app.svelte";
 Framework7.use(Framework7Svelte);
 
 // Mount Svelte App
-new App({
+const _app = new App({
   target: document.getElementById("app"),
 });
