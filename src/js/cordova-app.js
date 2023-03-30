@@ -1,10 +1,10 @@
-var cordovaApp = {
+const cordovaApp = {
   f7: null,
   /*
   This method hides splashscreen after 2 seconds
   */
-  handleSplashscreen: function () {
-    var f7 = cordovaApp.f7;
+  handleSplashscreen: () => {
+    const f7 = cordovaApp.f7;
     if (!window.navigator.splashscreen || f7.device.electron) return;
     setTimeout(() => {
       window.navigator.splashscreen.hide();
@@ -15,14 +15,14 @@ var cordovaApp = {
   In case there is an opened modal it will close that modal instead.
   In case there is a current view with navigation history, it will go back instead.
   */
-  handleAndroidBackButton: function () {
-    var f7 = cordovaApp.f7;
+  handleAndroidBackButton: () => {
+    const f7 = cordovaApp.f7;
     const $ = f7.$;
     if (f7.device.electron) return;
 
     document.addEventListener(
       "backbutton",
-      function (e) {
+      (e) => {
         if ($(".actions-modal.modal-in").length) {
           f7.actions.close(".actions-modal.modal-in");
           e.preventDefault();
@@ -103,11 +103,11 @@ var cordovaApp = {
     - provides cross-platform view "shrinking" on keyboard open/close
     - hides keyboard accessory bar for all inputs except where it required
   */
-  handleKeyboard: function () {
-    var f7 = cordovaApp.f7;
+  handleKeyboard: () => {
+    const f7 = cordovaApp.f7;
     if (!window.Keyboard || !window.Keyboard.shrinkView || f7.device.electron)
       return;
-    var $ = f7.$;
+    const $ = f7.$;
     window.Keyboard.shrinkView(false);
     window.Keyboard.disableScrollingInShrinkView(true);
     window.Keyboard.hideFormAccessoryBar(true);
@@ -127,7 +127,7 @@ var cordovaApp = {
       window.Keyboard.hideFormAccessoryBar(false);
     });
     window.addEventListener("keyboardHeightWillChange", (event) => {
-      var keyboardHeight = event.keyboardHeight;
+      const keyboardHeight = event.keyboardHeight;
       if (keyboardHeight > 0) {
         // Keyboard is going to be opened
         document.body.style.height = `calc(100% - ${keyboardHeight}px)`;
@@ -141,10 +141,10 @@ var cordovaApp = {
     $(document).on(
       "touchstart",
       "input, textarea, select",
-      function (e) {
-        var nodeName = e.target.nodeName.toLowerCase();
-        var type = e.target.type;
-        var showForTypes = ["datetime-local", "time", "date", "datetime"];
+      (e) => {
+        const nodeName = e.target.nodeName.toLowerCase();
+        const type = e.target.type;
+        const showForTypes = ["datetime-local", "time", "date", "datetime"];
         if (nodeName === "select" || showForTypes.indexOf(type) >= 0) {
           window.Keyboard.hideFormAccessoryBar(false);
         } else {
@@ -154,7 +154,7 @@ var cordovaApp = {
       true
     );
   },
-  init: function (f7) {
+  init: (f7) => {
     // Save f7 instance
     cordovaApp.f7 = f7;
 
