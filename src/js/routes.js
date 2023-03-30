@@ -31,20 +31,17 @@ const routes = [
   },
   {
     path: "/request-and-load/user/:userId/",
-    async: function ({ router, to, resolve }) {
+    async: ({ router, _to, resolve }) => {
       // App instance
-      var app = router.app;
+      const app = router.app;
 
       // Show Preloader
       app.preloader.show();
 
-      // User ID from request
-      var userId = to.params.userId;
-
       // Simulate Ajax Request
-      setTimeout(function () {
+      setTimeout(() => {
         // We got user data from request
-        var user = {
+        const user = {
           firstName: "Vladimir",
           lastName: "Kharlampidi",
           about: "Hello, i am creator of Framework7! Hope you like it!",
