@@ -2,6 +2,7 @@ import HomePage from "../pages/home.svelte";
 import KonstaPage from "../pages/konsta.svelte";
 import AboutPage from "../pages/about.svelte";
 import FormPage from "../pages/form.svelte";
+import TasksList from '../components/tasks.svelte';
 
 import DynamicRoutePage from "../pages/dynamic-route.svelte";
 import RequestAndLoad from "../pages/request-and-load.svelte";
@@ -23,6 +24,10 @@ const routes = [
   {
     path: "/form/",
     component: FormPage,
+  },
+  {
+    path: "/tasks/",
+    component: TasksList,
   },
 
   {

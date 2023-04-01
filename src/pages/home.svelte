@@ -5,6 +5,7 @@
     Calendar,
     ClockFill,
   } from "framework7-icons/svelte";
+  import TaskList from '../components/tasks.svelte';
   let activeTab = "tab-1";
 </script>
 
@@ -49,8 +50,11 @@
   </Tabbar>
   <!-- Page content -->
   {#if activeTab === "tab-1"}
-    <Block strong inset class="space-y-4">
-      <p>
+
+  <TaskList />
+
+    <!--<Block strong inset class="space-y-4">
+  <p>
         <b>Tab 1</b>
       </p>
       <p>
@@ -78,7 +82,7 @@
           aspernatur amet et alias! Sit odit cum voluptas quae? Est, omnis eos?
         </span>
       </p>
-    </Block>
+    </Block>-->
   {:else if activeTab === "tab-2"}
     <Block strong inset class="space-y-4">
       <p>
