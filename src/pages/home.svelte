@@ -7,6 +7,10 @@
     Tab,
     Tabs,
     Toolbar,
+    Icon,
+    Fab,
+    FabButtons,
+    FabButton,
   } from "framework7-svelte";
   import TaskList from "../components/tasks/TaskList.svelte";
 </script>
@@ -18,6 +22,16 @@
     <Link tabLink="#tab-2">Habits</Link>
     <Link tabLink="#tab-3">Pomodoro</Link>
   </Toolbar>
+
+  <Fab position="right-bottom" color="deeppurple">
+    <Icon ios="f7:plus" aurora="f7:plus" md="material:add"></Icon>
+    <Icon ios="f7:xmark" aurora="f7:xmark" md="material:close"></Icon>
+    <FabButtons position="top">
+      <FabButton label="Action 1">1</FabButton>
+      <FabButton label="Action 2">2</FabButton>
+    </FabButtons>
+  </Fab>
+
   <Tabs>
     <Tab id="tab-1" tabActive>
       <TaskList />
