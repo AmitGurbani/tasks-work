@@ -3307,10 +3307,10 @@ map-obj@^4.0.0, map-obj@^4.1.0:
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-4.3.0.tgz#9304f906e93faae70880da102a9f1df0ea8bb05a"
   integrity sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==
 
-material-icons@^1.13.3:
-  version "1.13.3"
-  resolved "https://registry.yarnpkg.com/material-icons/-/material-icons-1.13.3.tgz#41ede5e25a7c83da3779445816c0bf466ca23274"
-  integrity sha512-fYn9X3mp20I79YoFTvIlJBkwmkyV9NEBVR6rlKXSVtGiGL6J16/jF+/R7C8ZrY+fjyRYPj9BUlhYXD2lFZzmxQ==
+material-icons@^1.13.9:
+  version "1.13.9"
+  resolved "https://registry.yarnpkg.com/material-icons/-/material-icons-1.13.9.tgz#15dbe8895111ae2cca9a55871cdcd30a6783e06a"
+  integrity sha512-dwuf2C8LR07FcrjRDx0vWnDEcHiDuamXOmtAck8bdONUv5Fi6wR/ubQwPfG1NbcqgPg+y0fHN8Unj5DO+5fV4w==
 
 meow@^10.1.2:
   version "10.1.5"
